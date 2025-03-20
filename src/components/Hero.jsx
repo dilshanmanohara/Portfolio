@@ -30,7 +30,7 @@ const Hero = () => {
                 border-4 border-secondary/20 shadow-custom-lg transition-all duration-500 
                 hover:scale-105 hover:border-secondary/40 hover:shadow-glow">
                 <img
-                  src="/profilepic.png"
+                  src="/Portfolio/profilepic.png"
                   alt="Dilshan Manohara"
                   className="w-full h-full object-cover object-center"
                 />
