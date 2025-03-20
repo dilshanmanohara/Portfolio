@@ -1,0 +1,17 @@
+Subject: New message from {{user_name}}
+
+Hello Dilshan,
+
+You got a new message from {{user_name}}:
+
+Subject: {{subject}}
+
+Message:
+{{message}}
+
+Contact Details:
+Name: {{user_name}}
+Email: {{user_email}}
+
+Best regards,
+Your Portfolio Contact Form 
