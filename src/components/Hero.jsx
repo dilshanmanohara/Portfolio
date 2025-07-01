@@ -13,17 +13,18 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 lg:pt-0 animate-fade-in" id="home">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex flex-col items-center lg:flex-row lg:justify-between lg:items-center gap-12 lg:gap-16">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 lg:pt-0 animate-fade-in overflow-hidden" id="home">
+      {/* Animated Waves Background removed, now global */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="flex flex-col items-center lg:flex-row lg:justify-between lg:items-center gap-8 sm:gap-12 lg:gap-16">
           {/* Profile Image Section */}
-          <div className="w-full max-w-md lg:w-1/2 flex justify-center lg:order-2">
-            <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-[400px] lg:h-[400px]">
+          <div className="w-full max-w-xs sm:max-w-sm lg:w-1/2 flex justify-center lg:order-2 mb-8 lg:mb-0">
+            <div className="relative w-40 h-40 sm:w-56 sm:h-56 lg:w-[400px] lg:h-[400px]">
               {/* Glow Effect */}
-              <div className="absolute inset-0 rounded-full bg-secondary/20 blur-2xl transform scale-110 animate-pulse"></div>
+              <div className="absolute inset-0 rounded-full bg-secondary/20 blur-2xl scale-110 animate-pulse"></div>
               
               {/* Background Circle */}
-              <div className="absolute inset-0 rounded-full bg-dark-200/50 transform translate-x-2 translate-y-2"></div>
+              <div className="absolute inset-0 rounded-full bg-dark-200/50 translate-x-2 translate-y-2"></div>
               
               {/* Image Container */}
               <div className="relative w-full h-full rounded-full overflow-hidden 
@@ -39,11 +40,11 @@ const Hero = () => {
           </div>
 
           {/* Text Content */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left lg:order-1 animate-slide-up">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 text-textPrimary">
+          <div className="w-full lg:w-1/2 text-center lg:text-left animate-slide-up">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 text-textPrimary">
               Dilshan Manohara
             </h1>
-            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-textSecondary mb-6">
+            <div className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-bold text-textSecondary mb-6">
               <div className="relative inline-flex items-center">
                 <span className="inline-block min-w-[4ch] text-center transition-all duration-500">
                   {displayText}
@@ -51,7 +52,7 @@ const Hero = () => {
                 <span className="ml-2">Developer</span>
               </div>
             </div>
-            <p className="text-textSecondary text-lg mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-textSecondary text-base xs:text-lg mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
               I'm a second-year Computer Science undergraduate at IIT Sri Lanka, 
               affiliated with the University of Westminster, UK. I specialize in 
               building exceptional digital experiences.
@@ -66,7 +67,7 @@ const Hero = () => {
               <a 
                 href="/cv.pdf" 
                 download="Dilshan_Manohara_CV.pdf"
-                className="btn-primary bg-white hover:bg-accent/5"
+                className="btn-primary"
               >
                 Download CV
               </a>
